@@ -1,0 +1,52 @@
+[
+    {
+      "category": "digital marketing",
+      "details": "We create and manage result-driven social media campaigns.",
+      "image": "https://i.ibb.co.com/m5LxjR34/web.webp",
+      "sector": ["social media", "advertising", "content creation"]
+    },
+    {
+      "category": "seo",
+      "details": "Boost your search visibility with keyword-optimized content.",
+      "image": "https://i.ibb.co.com/HWgrRpV/seo.jpgseo1.jpg",
+      "sector": ["on-page SEO", "content optimization", "keyword research"]
+    },
+    {
+      "category": "web",
+      "details": "Develop responsive, fast-loading websites tailored to your brand.",
+      "image": "https://i.ibb.co.com/m5LxjR34/web.webp",
+      "sector": ["frontend development", "backend development", "UI/UX design"]
+    },
+    {
+      "category": "others",
+      "details": "Professional video editing for social platforms and marketing.",
+      "image": "https://i.ibb.co.com/Kpcy7m09/web2.jpg",
+      "sector": ["video editing", "motion graphics", "post-production"]
+    },
+    {
+      "category": "digital marketing",
+      "details": "Email marketing automation setup and management for better ROI.",
+      "image": "https://i.ibb.co.com/Kpcy7m09/web2.jpg",
+      "sector": ["email campaigns", "automation", "lead nurturing"]
+    },
+    {
+      "category": "seo",
+      "details": "Comprehensive SEO audits and technical fixes.",
+      "image": "https://i.ibb.co.com/HWgrRpV/seo.jpgseo1.jpg",
+      "sector": ["technical SEO", "site audits", "schema markup"]
+    },
+    {
+      "category": "web",
+      "details": "Custom eCommerce development with secure payment integration.",
+      "image": "https://i.ibb.co.com/Kpcy7m09/web2.jpg",
+      "sector": ["e-commerce", "payment gateways", "product management"]
+    },
+    {
+      "category": "Video Editing",
+      "details": "Full-service branding including logo design and brand guidelines.",
+      "image": "https://i.ibb.co.com/HWgrRpV/seo.jpgseo1.jpg",
+      "sector": ["logo design", "brand strategy", "visual identity"]
+    }
+
+  ]
+  

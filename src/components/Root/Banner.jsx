@@ -9,7 +9,7 @@ const Banner = () => {
           <div className="max-w-prose text-left">
             <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
               WE ARE DIGITAL{" "}
-              <strong className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent ">
+              <strong className="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent mr-1">
                 MARKETING
               </strong>
               AGENCY
