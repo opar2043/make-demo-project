@@ -10,6 +10,7 @@ import { Pagination } from "swiper/modules";
 
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const Project = () => {
   const [projects, setProject] = useState([]);
@@ -22,12 +23,12 @@ const Project = () => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <Title text={"Our Client Project"}></Title>
-      <div>
+      <div className="mt-6">
         <Swiper
           slidesPerView={3}
-          spaceBetween={-50}
+          spaceBetween={-100}
           centeredSlides={true}
           pagination={{
             clickable: true,
@@ -38,11 +39,11 @@ const Project = () => {
           {projects &&
             projects.map((pro) => (
               <SwiperSlide key={pro.id} pro={pro}  className="mb-11 ">
-                <div className="w-full md:min-w-[60%] md:max-w-[75%] relative bg-white boxShadow rounded-xl mb-9 border">
+                <div className="w-full md:min-w-[60%] md:max-w-[65%] relative bg-white boxShadow rounded-xl mb-9 border shadow-md">
                   <img
                     src={pro.image}
                     alt="image"
-                    className="w-full h-[260px] object-cover rounded-t-xl"
+                    className="w-full h-[180px] object-cover rounded-t-xl"
                   />
 
                   <div className="absolute top-3 right-3 bg-blue-500 rounded-full p-2">
@@ -50,7 +51,7 @@ const Project = () => {
                   </div>
 
                   <div className="p-4">
-                    <h1 className="text-[1.3rem] font-bold leading-[34px]">
+                    <h1 className="text-[1.3rem] font-bold leading-[34px] bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
                       {pro.name}
                     </h1>
                     <div className="flex justify-between items-center">
@@ -58,7 +59,9 @@ const Project = () => {
                       Show Full Deatisl about this project
                     </span>
                     <div className="float-right  hover:bg-gray-100 cursor-pointer mr-2  rounded-full group">
-                    <BsArrowRight className="text-[2rem] text-blue-700 font-extrabold" />
+                      <NavLink to={``}>
+                         <BsArrowRight className="text-[2rem] text-blue-500 font-extrabold" />
+                      </NavLink>
                   </div>
                     </div>
                   </div>
