@@ -1,0 +1,42 @@
+[
+    {
+      "name": "Google",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+    },
+    {
+      "name": "Amazon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+    },
+    {
+      "name": "Apple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+    },
+    {
+      "name": "Microsoft",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+    },
+    {
+      "name": "Facebook",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+    },
+    {
+        "name": "Netflix",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+      },
+      {
+        "name": "Tesla",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg"
+      },
+      {
+        "name": "Adobe",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Adobe_Systems_logo_and_wordmark.svg"
+      },
+      {
+        "name": "Tesla",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg"
+      },
+      {
+        "name": "Adobe",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Adobe_Systems_logo_and_wordmark.svg"
+      }
+  ]

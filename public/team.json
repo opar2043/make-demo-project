@@ -1,0 +1,45 @@
+[
+    {
+      "name": "Rijoan Rashid",
+      "role": "Frontend Web Developer",
+      "details": "Expert in building responsive web applications using React and Tailwind CSS.",
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "name": "Farzana Akter",
+      "role": "UI/UX Designer",
+      "details": "Designs intuitive user interfaces and improves user experience with Figma and Adobe XD.",
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      "name": "Tanvir Hasan",
+      "role": "Backend Developer",
+      "details": "Specializes in Node.js, Express, and MongoDB for scalable backend solutions.",
+      "image": "https://randomuser.me/api/portraits/men/45.jpg"
+    },
+    {
+      "name": "Nadia Rahman",
+      "role": "Graphics Designer",
+      "details": "Creates eye-catching visuals, logos, and branding materials using Adobe Illustrator.",
+      "image": "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    {
+      "name": "Rafsan Jamil",
+      "role": "Full Stack Developer",
+      "details": "Works with both frontend and backend technologies to deliver complete web solutions.",
+      "image": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "name": "Sadia Islam",
+      "role": "Content Strategist",
+      "details": "Crafts compelling content strategies for digital platforms and social media campaigns.",
+      "image": "https://randomuser.me/api/portraits/women/29.jpg"
+    },
+    {
+      "name": "Arman Chowdhury",
+      "role": "Chief Executive Officer (CEO)",
+      "details": "Visionary leader with a passion for innovation and team growth, driving company strategy.",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    }
+  ]
+  
