@@ -28,7 +28,7 @@ const Project = () => {
       <div className="mt-6">
         <Swiper
           slidesPerView={3}
-          spaceBetween={-100}
+          spaceBetween={30}
           centeredSlides={true}
           pagination={{
             clickable: true,
@@ -38,7 +38,7 @@ const Project = () => {
         >
           {projects &&
             projects.map((pro) => (
-              <SwiperSlide key={pro.id} pro={pro}  className="mb-11 ">
+              <SwiperSlide key={pro.id} pro={pro}  className="mb-11">
                 <div className="w-full md:min-w-[60%] md:max-w-[65%] relative bg-white boxShadow rounded-xl mb-9 border shadow-md">
                   <img
                     src={pro.image}

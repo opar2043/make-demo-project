@@ -4,7 +4,7 @@ import img from "../../assets/figitalwork.jpg";
 
 const Company = () => {
   return (
-    <div id="company">
+    <div id="company " className="w-11/12 mx-auto">
       <Title text={"Our Company"}></Title>
 
       <div className="flex flex-col md:flex-row gap-5 my-5">

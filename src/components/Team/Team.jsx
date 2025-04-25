@@ -12,9 +12,9 @@ const Team = () => {
           });
       }, []);
   return (
-    <div>
+    <div className='w-11/12 mx-auto'>
         <Title text={'Team Member'}></Title>
-        <div className='grid grid-cols-2 md:grid-cols-4 gap-3  justify-between md:ml-10'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-3  justify-between '>
             {
               team && team.map(tm => <TeamCard key={tm.name} tm={tm}></TeamCard>)
             }

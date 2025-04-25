@@ -4,7 +4,7 @@ const SercviceCard = ({srvc}) => {
     const {category , details , image , sector} = srvc;
   return (
     <div>
-      <a href="#" className="group relative block bg-black">
+      <a href="#" className="group relative block bg-black w-11/12 h-[230px]">
         <img
           alt=""
           src={image}
@@ -18,7 +18,7 @@ const SercviceCard = ({srvc}) => {
 
           <p className="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
 
-          <div className="mt-12 sm:mt-48 lg:mt-28">
+          <div className="mt-8  md:mt-16">
             <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
               <p className="text-sm text-white">
                 {details}

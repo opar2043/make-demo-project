@@ -5,7 +5,7 @@ const Title = ({ text }) => {
     <div className="py-6 my-6">
       <div className="flex items-center justify-center gap-4">
         {/* Left Line */}
-        <div className="h-1 mt-2 w-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
+        <div className="h-1 mt-2 w-20 hidden md:flex bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
 
         {/* Title Text */}
         <h2 className="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
@@ -13,7 +13,7 @@ const Title = ({ text }) => {
         </h2>
 
         {/* Right Line */}
-        <div className="h-1 mt-2 w-20 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
+        <div className="h-1 mt-2 w-20  hidden md:flex bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
       </div>
     </div>
   )
