@@ -6,6 +6,9 @@ import Service from '../Service/Service'
 import Project from '../Project/Project'
 import Client from '../Client/Client'
 import Team from '../Team/Team'
+import Contact from '../Contact/Contact'
+import Review from '../Review/Review'
+import Why from '../Why/Why'
 
 
 const Root = () => {
@@ -20,6 +23,9 @@ const Root = () => {
         <Project></Project>
         <Client></Client>
         <Team></Team>
+        <Review></Review>
+        <Contact></Contact>
+        <Why></Why>
         </div>
     </div>
   )

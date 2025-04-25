@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Sarah Ahmed",
+      "review": "Excellent service and great communication. Highly recommended!",
+      "rating": 5
+    },
+    {
+      "name": "John Doe",
+      "review": "Project was delivered on time and exceeded expectations.",
+      "rating": 4
+    },
+    {
+      "name": "Lamia Hossain",
+      "review": "Very professional and easy to work with.",
+      "rating": 5
+    },
+    {
+      "name": "Michael Lee",
+      "review": "Good work but there were some delays in the beginning.",
+      "rating": 3
+    },
+    {
+      "name": "Emily Rahman",
+      "review": "Loved the design and attention to detail. Great job!",
+      "rating": 5
+    },
+    {
+      "name": "Carlos Martinez",
+      "review": "Responsive and skilled developer. Will hire again.",
+      "rating": 4
+    },
+    {
+      "name": "Nadia Akter",
+      "review": "Amazing experience, went above and beyond!",
+      "rating": 5
+    },
+    {
+      "name": "James Parker",
+      "review": "Satisfactory work, though there's room for improvement.",
+      "rating": 3
+    }
+  ]
+  

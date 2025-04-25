@@ -8,19 +8,16 @@ import Root from "./components/Root/Root.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
+    element: <App></App>,
     errorElement: 'error',
-    children: [{
-      path: '/root',
-     
-    }]
+    
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <App />
+       <App></App>
     </BrowserRouter>
   </StrictMode>
 );
