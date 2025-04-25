@@ -22,7 +22,7 @@ const Review = () => {
   }, []);
 
   return (
-    <div className="mt-10 w-11/12 mx-auto">
+    <div className="mt-10 w-11/12 mx-auto my-6 md:my-14">
       <Title text={"Client's Review"} />
 
       <div className="flex flex-col md:flex-row gap-8 mt-6 items-center">

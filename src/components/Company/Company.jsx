@@ -12,7 +12,7 @@ const Company = () => {
           <img src={img} alt="" className="w-full" />
         </div>
         <div className="grid grid-cols-1 gap-3  w-full">
-          <p>
+          <p className="text-gray-600">
             IT Maison, the best digital marketing agency in Dhaka, Bangladesh,
             offers comprehensive and top-notch 360° digital marketing services.
             These include web design and development, professional search engine
@@ -30,7 +30,7 @@ const Company = () => {
           </p>
 
           <div>
-            <address>
+            <address className="text-gray-600">
               ------ At IT Maison, we are a team of digital enthusiasts
               dedicated to delivering top-notch IT and marketing solutions. Our
               approach is rooted in innovation, creativity, and strategy to

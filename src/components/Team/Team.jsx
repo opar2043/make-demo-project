@@ -12,7 +12,7 @@ const Team = () => {
           });
       }, []);
   return (
-    <div className='w-11/12 mx-auto'>
+    <div className='w-11/12 mx-auto my-5 md:my-10'>
         <Title text={'Team Member'}></Title>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-3  justify-between '>
             {

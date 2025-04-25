@@ -9,6 +9,7 @@ import Team from '../Team/Team'
 import Contact from '../Contact/Contact'
 import Review from '../Review/Review'
 import Why from '../Why/Why'
+import About from '../About/About'
 
 
 const Root = () => {
@@ -19,6 +20,7 @@ const Root = () => {
         <div className=''>
         <Banner></Banner>
         <Company></Company>
+        <About></About>
         <Service></Service>
         <Project></Project>
         <Client></Client>

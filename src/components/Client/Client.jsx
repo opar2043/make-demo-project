@@ -12,7 +12,7 @@ const Client = () => {
           });
       }, []);
   return (
-    <div className='mx-auto my-6 w-11/12'>
+    <div className='mx-auto my-6 md:my-10 w-11/12'>
         <Title text={'Our Client'}></Title>
         <div className='grid grid-cols-2 md:grid-cols-5 justify-end w-10/12 mx-auto'>
             {
