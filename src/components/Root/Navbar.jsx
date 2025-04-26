@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -27,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar fixed top-0 z-50  bg-gradient-to-r from-cyan-400/50 to-blue-500/40">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -48,18 +49,18 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm  dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-xl"
+              className="menu menu-sm  dropdown-content font-semibold bg-base-100 to-blue-500/40 rounded-box z-[1] mt-3 w-52 h-[100vh] p-2 shadow text-xl"
             >
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">IT Maison</a>
+          <p className="btn btn-ghost text-xl md:text-3xl font-bold">IT Maison</p>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-semibold">{links}</ul>
+          <ul className="menu menu-horizontal px-1 font-semibold text-lg">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-white bg-gradient-to-r from-cyan-500 to-blue-500">Button</a>
+          <a className="btn text-white bg-gradient-to-r from-cyan-500 to-blue-500">Log In </a>
         </div>
       </div>
     </div>

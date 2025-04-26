@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/figitalwork.jpg";
+import img from "../../assets/web2.jpeg";
 
 const Banner = () => {
   return (
