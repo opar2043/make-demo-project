@@ -12,7 +12,7 @@ const Service = () => {
         })
     },[])
   return (
-    <div className='my-8 md:my-16 w-11/12 mx-auto'>
+    <div id='service' className='my-8 md:my-16 w-11/12 mx-auto'>
         <Title text={'Our Service'}></Title>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
             {

@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const About = () => {
   return (
-    <div className="py-10 w-11/12 mx-auto">
+    <div id="about" className="py-10 w-11/12 mx-auto">
       <Title text={"About Us!"} />
 
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-10">

@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Company = () => {
   return (
-    <div id="company " className="w-11/12 mx-auto">
+    <div id="company" className="w-11/12 mx-auto">
       <Title text={"Our Company"}></Title>
 
       <div className="flex flex-col md:flex-row gap-5 my-5">

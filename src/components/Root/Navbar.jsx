@@ -8,24 +8,28 @@ import { FaSignOutAlt } from "react-icons/fa";
 const Navbar = () => {
   const links = (
     <>
-      <NavLink>
+   
         <li>
           <a href="">Home</a>
         </li>
-      </NavLink>
-      <NavLink>
-        <li>
-          <a href="#about">About</a>
-        </li>
-      </NavLink>
-      <NavLink to="#company"></NavLink>
-      <NavLink>
-        <li>
-          <a href="#service">Service</a>
-        </li>
-      </NavLink>
+      
+      <li>
+        <a href="#about">About</a>
+      </li>
       <li>
         <a href="#company">Company</a>
+      </li>
+      <li>
+        <a href="#service">Service</a>
+      </li>
+      <li>
+        <a href="#project">Projects</a>
+      </li>
+      <li>
+        <a href="#order">Order</a>
+      </li>
+      <li>
+        <a href="#review">Review</a>
       </li>
     </>
   );
@@ -58,9 +62,6 @@ const Navbar = () => {
         });
       });
   }
-
-
-
 
   function logout() {}
 
@@ -97,13 +98,12 @@ const Navbar = () => {
           </p>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-semibold text-lg">
+          <ul className="menu menu-horizontal font-semibold text-sm px-1 ">
             {links}
           </ul>
         </div>
         <div className="navbar-end">
-
-           {user ? (
+          {user ? (
             <button
               onClick={() => logout()}
               className="btn hover:shadow-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500"
@@ -117,7 +117,7 @@ const Navbar = () => {
             >
               <FaGoogle></FaGoogle> Google Login{" "}
             </button>
-          )} 
+          )}
         </div>
       </div>
     </div>
@@ -125,11 +125,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
