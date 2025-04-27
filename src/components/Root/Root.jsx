@@ -30,8 +30,8 @@ const Root = () => {
         <Why></Why>
       </div>
 
-      <div className="fixed bottom-10 right-10 shadow-2xl ">
-        <button className="btn hover:bg-green-500 hover:text-white hover:border-0 text-green-600 rounded-full border border-green-500 ">
+      <div className="fixed bottom-5 right-7 shadow-2xl ">
+        <button className="btn text-xs  hover:bg-green-500 hover:text-white hover:border-0 text-green-600 rounded-full border border-green-500 ">
           Massege Us!
           <div className="text-3xl ">
             <a href=" https://wa.me/qr/7FADY5JLDLSMB1">

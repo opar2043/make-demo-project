@@ -1,5 +1,9 @@
-
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../provider/Authprovider";
+import Swal from "sweetalert2";
+import { FaGoogle } from "react-icons/fa6";
+import { FaSignOutAlt } from "react-icons/fa";
 
 const Navbar = () => {
   const links = (
@@ -25,6 +29,40 @@ const Navbar = () => {
       </li>
     </>
   );
+
+  const { handleGoogle, user, setUser, handleLogout } = useContext(AuthContext);
+
+  function logIn() {
+    handleGoogle()
+      .then((result) => {
+        const userG = result.user;
+        setUser(userG);
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Successfully Logged In",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      })
+      .catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        Swal.fire({
+          position: "top-end",
+          icon: "error",
+          title: "Something Went Wrong",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      });
+  }
+
+
+
+
+  function logout() {}
 
   return (
     <div>
@@ -54,13 +92,32 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <p className="btn btn-ghost text-xl md:text-3xl font-bold">IT Maison</p>
+          <p className="btn btn-ghost text-xl md:text-3xl font-bold">
+            IT Maison
+          </p>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 font-semibold text-lg">{links}</ul>
+          <ul className="menu menu-horizontal px-1 font-semibold text-lg">
+            {links}
+          </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-white bg-gradient-to-r from-cyan-500 to-blue-500">Log In </a>
+
+           {user ? (
+            <button
+              onClick={() => logout()}
+              className="btn hover:shadow-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
+              <FaSignOutAlt></FaSignOutAlt> Logout{" "}
+            </button>
+          ) : (
+            <button
+              onClick={() => logIn()}
+              className="btn hover:shadow-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
+              <FaGoogle></FaGoogle> Google Login{" "}
+            </button>
+          )} 
         </div>
       </div>
     </div>
@@ -68,3 +125,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
