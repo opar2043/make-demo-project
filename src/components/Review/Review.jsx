@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { motion } from "motion/react";
 
 const Review = () => {
   const [review, setReview] = useState([]);
@@ -25,18 +26,25 @@ const Review = () => {
     <div className="mt-10 w-11/12 mx-auto my-6 md:my-14">
       <Title text={"Client's Review"} />
 
-      <div className="flex flex-col md:flex-row gap-8 mt-6 items-center">
+      <motion.div className="flex flex-col md:flex-row gap-8 mt-6 items-center">
         {/* Left Image */}
-        <div className="md:w-1/2">
+        <motion.div
+          initial={{ x: -25, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.3, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="md:w-1/2"
+        >
           <img
             src={bg1}
             alt="Client Review Banner"
             className="rounded w-full h-auto object-cover"
           />
-        </div>
+        </motion.div>
 
         {/* Right Swiper Reviews */}
-        <div className="md:w-1/2  w-full">
+        <div
+        className="md:w-1/2  w-full">
           <Swiper
             spaceBetween={30}
             centeredSlides={true}
@@ -71,14 +79,12 @@ const Review = () => {
                       />
                     </div>
                   </div>
-                  <p className="my-3  text-sm">
-                    -- {item.review} --
-                  </p>
+                  <p className="my-3  text-sm">-- {item.review} --</p>
                 </SwiperSlide>
               ))}
           </Swiper>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

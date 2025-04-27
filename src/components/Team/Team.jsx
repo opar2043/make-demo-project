@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Title from '../Shared/Title'
 import TeamCard from './TeamCard';
+import { motion } from 'motion/react';
 
 const Team = () => {
       const [team , setTeam] = useState([])

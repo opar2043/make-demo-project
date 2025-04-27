@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Shared/Title";
 import img from "../../assets/figitalwork.jpg";
+import { motion } from "motion/react";
 
 const Company = () => {
   return (
@@ -8,10 +9,22 @@ const Company = () => {
       <Title text={"Our Company"}></Title>
 
       <div className="flex flex-col md:flex-row gap-5 my-5">
-        <div className="w-full">
+        <motion.div
+          initial={{ x: 25, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="w-full"
+        >
           <img src={img} alt="" className="w-full" />
-        </div>
-        <div className="grid grid-cols-1 gap-3  w-full">
+        </motion.div>
+        <motion.div
+          initial={{ x: -25, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="grid grid-cols-1 gap-3  w-full"
+        >
           <p className="text-gray-600">
             IT Maison, the best digital marketing agency in Dhaka, Bangladesh,
             offers comprehensive and top-notch 360° digital marketing services.
@@ -37,7 +50,7 @@ const Company = () => {
               ensure our clients receive impactful results------
             </address>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

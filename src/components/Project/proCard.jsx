@@ -1,11 +1,17 @@
 import { IoIosNotificationsOutline } from "react-icons/io";
-
+import { motion } from "motion/react";
 import { BsArrowRight } from "react-icons/bs";
 
 const ProCard = ({ pro }) => {
   return (
     <div>
-      <div className="card card-compact bg-base-100 rounded shadow-xl border border-blue-100">
+      <motion.div
+        initial={{ y: 0, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.7, delay: 0.5, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="card card-compact bg-base-100 rounded shadow-xl border border-blue-100"
+      >
         <figure className="relative">
           <img
             src={pro.image}
@@ -70,7 +76,7 @@ const ProCard = ({ pro }) => {
             </div>
           </div>
         </dialog>
-      </div>
+      </motion.div>
     </div>
   );
 };

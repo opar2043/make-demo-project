@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Title from "../Shared/Title";
 import ProCard from "./proCard";
+import { motion } from "motion/react";
 
 const Project = () => {
   const [projects, setProject] = useState([]);

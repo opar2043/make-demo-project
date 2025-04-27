@@ -1,9 +1,15 @@
 import React from "react";
+import { motion } from "motion/react";
 
 const SercviceCard = ({srvc}) => {
     const {category , details , image , sector} = srvc;
   return (
-    <div>
+    <motion.div 
+    initial={{x: 0, opacity: 0}}
+    whileInView={{x: 0 , opacity: 1}}
+    transition={{ duration: 0.6 , delay: 0.3 , ease: "easeInOut"}}
+    viewport={{once: true}}
+    >
       <p className="group relative block bg-black w-11/12 h-[230px]">
         <img
           alt=""
@@ -27,7 +33,7 @@ const SercviceCard = ({srvc}) => {
           </div>
         </div>
       </p>
-    </div>
+    </motion.div>
   );
 };
 
