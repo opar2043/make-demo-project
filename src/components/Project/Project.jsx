@@ -25,7 +25,7 @@ const Project = () => {
             </NavLink>
           </div>
         </div>
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-3">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-1">
 
         {
           projects && projects.slice(0,4).map(pro => <ProCard key={pro.name} pro={pro}></ProCard>)

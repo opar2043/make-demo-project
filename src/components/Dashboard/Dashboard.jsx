@@ -3,9 +3,9 @@ import { NavLink, Outlet } from 'react-router-dom'; // Outlet will render nested
 
 const Dashboard = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row gap-4">
       {/* Sidebar */}
-      <div className="w-64 bg-gray-800 text-white h-screen p-4">
+      <div className="w-full md:w-64 bg-gray-800 text-white h-screen p-4">
         <h2 className="text-xl font-bold mb-8 text-center">Admin Panel</h2>
         <ul className="space-y-4">
           <li>
@@ -18,7 +18,7 @@ const Dashboard = () => {
           </li>
           <li>
             <NavLink 
-              to="/dashboard/add-project"
+              to="/dashboard/addproject"
               className="block py-2 px-4 text-white hover:bg-blue-500 rounded"
             >
               Add Project

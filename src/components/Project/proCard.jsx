@@ -32,7 +32,7 @@ const ProCard = ({ pro }) => {
             </span>
 
             <button
-              className=" text-blue-700 text-2xl"
+              className=" text-blue-700 text-xl "
               onClick={() => document.getElementById("my_modal_3").showModal()}
             >
               <BsArrowRight></BsArrowRight>

@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./components/Root/Root.jsx";
 import AuthProvider from "./components/provider/Authprovider.jsx";
 import ShowCard from "./components/Project/ShowCard.jsx";
+import Dashboard from "./components/Dashboard/Dashboard.jsx";
+import AddProject from "./components/Dashboard/AddProject/AddProject.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: '/show',
     element: <ShowCard></ShowCard>
+  },
+  {
+   path: '/dashboard',
+   element: <Dashboard></Dashboard>,
+   children: [{
+    path: '/dashboard/addproject',
+    element: <AddProject></AddProject>
+   }]
   }
 ]);
 
