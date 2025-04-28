@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+     
       "name": "TaskFlow",
       "category": "Web Application",
       "details": "A task management app with real-time syncing and drag-and-drop features.",
@@ -9,7 +9,7 @@
       "image": "https://i.ibb.co.com/W5WDc4f/pic-3.jpg"
     },
     {
-      "id": 2,
+     
       "name": "Shaadi.com Clone",
       "category": "Web Application",
       "details": "A marriage matchmaking website clone with profile management.",
@@ -18,7 +18,7 @@
       "image": "https://i.ibb.co.com/n3bZkSj/mac-2.jpg"
     },
     {
-      "id": 3,
+    
       "name": "Verity Restaurant",
       "category": "Website",
       "details": "A modern restaurant website with reservation and menu browsing.",
@@ -27,7 +27,7 @@
       "image": "https://i.ibb.co.com/n3bZkSj/mac-2.jpg"
     },
     {
-      "id": 4,
+     
       "name": "eShopping.com",
       "category": "E-commerce",
       "details": "A full-stack e-commerce platform with cart and payment system.",
@@ -36,7 +36,7 @@
       "image": "https://i.ibb.co.com/n3bZkSj/mac-2.jpg"
     },
     {
-      "id": 5,
+   
       "name": "Portfolio Website",
       "category": "Personal Website",
       "details": "My professional portfolio showcasing skills and projects.",
@@ -45,7 +45,7 @@
       "image": "https://i.ibb.co.com/W5WDc4f/pic-3.jpg"
     },
     {
-      "id": 6,
+      
       "name": "EduQuiz",
       "category": "Education App",
       "details": "An online quiz platform for students and educators.",
@@ -54,7 +54,7 @@
       "image": "https://i.ibb.co.com/W5WDc4f/pic-3.jpg"
     },
     {
-      "id": 7,
+     
       "name": "Crowd Cube",
       "category": "Crowdfunding Platform",
       "details": "A donation platform to support community-driven campaigns.",
@@ -63,7 +63,7 @@
       "image": "https://example.com/images/crowdcube.jpg"
     },
     {
-      "id": 8,
+  
       "name": "BlogVerse",
       "category": "Blog Website",
       "details": "A minimal blog site where users can read and post articles.",
@@ -72,7 +72,7 @@
       "image": "https://example.com/images/blogverse.jpg"
     },
     {
-      "id": 9,
+   
       "name": "FitTrack",
       "category": "Health & Fitness",
       "details": "A fitness tracker that logs daily activity and provides stats.",
@@ -81,7 +81,7 @@
       "image": "https://i.ibb.co.com/W5WDc4f/pic-3.jpg"
     },
     {
-      "id": 10,
+     
       "name": "SkillSwap",
       "category": "Learning Platform",
       "details": "A peer-to-peer platform where users exchange skills through lessons.",

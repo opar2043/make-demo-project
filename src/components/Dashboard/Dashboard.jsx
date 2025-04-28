@@ -10,7 +10,7 @@ const Dashboard = () => {
         <ul className="space-y-4">
           <li>
             <NavLink 
-              to="/dashboard/projects"
+              to="/dashboard/allproject"
               className="block py-2 px-4 text-white hover:bg-blue-500 rounded"
             >
               Projects
@@ -30,6 +30,14 @@ const Dashboard = () => {
               className="block py-2 px-4 text-white hover:bg-blue-500 rounded"
             >
               Orders
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/"
+              className="block py-2 px-4 text-white hover:bg-red-500 rounded"
+            >
+              Home
             </NavLink>
           </li>
         </ul>

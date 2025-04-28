@@ -66,11 +66,15 @@ const ProCard = ({ pro }) => {
                   <span className="badge badge-info text-white">
                     Key Features
                   </span>
-                  {pro.features.map((i, index) => (
-                    <div key={index} className="badge badge-outline">
-                      {i}
-                    </div>
-                  ))}
+                  {Array.isArray(pro.features) ? (
+                    pro.features.map((i, index) => (
+                      <div key={index} className="badge badge-outline">
+                        {i}
+                      </div>
+                    ))
+                  ) : (
+                    <div className="badge badge-outline">{pro.features}</div>
+                  )}
                 </div>
               </div>
             </div>

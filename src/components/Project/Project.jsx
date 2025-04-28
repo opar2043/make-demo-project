@@ -3,16 +3,20 @@ import Title from "../Shared/Title";
 import ProCard from "./proCard";
 import { motion } from "motion/react";
 import { NavLink } from "react-router-dom";
+import useProject from "../hook/useProject";
 
 const Project = () => {
-  const [projects, setProject] = useState([]);
-  useEffect(() => {
-    fetch("/project.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProject(data);
-      });
-  }, []);
+  // const [projects, setProject] = useState([]);
+  const [projects] = useProject()
+
+  // useEffect(() => {
+  //   fetch("/project.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setProject(data);
+  //     });
+  // }, []);
+
 
   return (
     <div id="project" className="w-11/12 mx-auto">

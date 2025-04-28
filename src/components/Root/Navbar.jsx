@@ -4,15 +4,15 @@ import { AuthContext } from "../provider/Authprovider";
 import Swal from "sweetalert2";
 import { FaGoogle } from "react-icons/fa6";
 import { FaSignOutAlt } from "react-icons/fa";
+import useAxios from "../hook/useAxios";
 
 const Navbar = () => {
   const links = (
     <>
-   
-        <li>
-          <a href="">Home</a>
-        </li>
-      
+      <li>
+        <a href="">Home</a>
+      </li>
+
       <li>
         <a href="#about">About</a>
       </li>
@@ -32,15 +32,15 @@ const Navbar = () => {
         <a href="#review">Review</a>
       </li>
       <li>
-      <NavLink to={'/dashboard'}>
-        <li>Dashboard</li>
-      </NavLink>
+        <NavLink to={"/dashboard"}>
+          <li className="text-blue-800">Dashboard</li>
+        </NavLink>
       </li>
     </>
   );
 
   const { handleGoogle, user, setUser, handleLogout } = useContext(AuthContext);
-
+  const axiiosSexure = useAxios();
   function logIn() {
     handleGoogle()
       .then((result) => {
@@ -53,6 +53,17 @@ const Navbar = () => {
           showConfirmButton: false,
           timer: 1500,
         });
+
+        const newUser = {
+          email: userG.email,
+          name: userG.displayName,
+          role: "user",
+        };
+
+        axiiosSexure
+          .post("/user", newUser)
+          .then((res) => {})
+          .catch((res) => {});
       })
       .catch((error) => {
         // Handle Errors here.

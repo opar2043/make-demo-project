@@ -26,7 +26,7 @@ const Root = () => {
         <Client></Client>
         <Team></Team>
         <Review></Review>
-        <Order></Order>
+        {/* <Order></Order> */}
         <Why></Why>
       </div>
 

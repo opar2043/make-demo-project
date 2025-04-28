@@ -68,7 +68,7 @@ const Order = () => {
             </div>
           </form>
         </div>
-      </div>
+      </div> 
     </div>
   )
 }
