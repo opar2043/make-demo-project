@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiiosSexure = axios.create({
-    baseURL: 'http://localhost:5001'
+    baseURL: 'https://my-backend-liard.vercel.app'
 })
 
 const useAxios = () => {

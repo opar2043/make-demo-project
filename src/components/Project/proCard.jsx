@@ -1,8 +1,12 @@
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { motion } from "motion/react";
 import { BsArrowRight } from "react-icons/bs";
+import useProject from "../hook/useProject";
+import { useState } from "react";
 
-const ProCard = ({ pro }) => {
+const ProCard = ({ pro ,selectedProject, handleId }) => {
+   
+
   return (
     <div>
       <motion.div
@@ -33,7 +37,7 @@ const ProCard = ({ pro }) => {
 
             <button
               className=" text-blue-700 text-xl "
-              onClick={() => document.getElementById("my_modal_3").showModal()}
+              onClick={() => handleId(pro._id)}
             >
               <BsArrowRight></BsArrowRight>
             </button>
@@ -53,7 +57,7 @@ const ProCard = ({ pro }) => {
                 <img
                   src={pro.image}
                   className="h-[200px] w-full object-cover"
-                  alt="Project"
+                  alt="project"
                 />
               </figure>
               <div className="card-body flex flex-col gap-3">
@@ -79,7 +83,7 @@ const ProCard = ({ pro }) => {
               </div>
             </div>
           </div>
-        </dialog>
+        </dialog> 
       </motion.div>
     </div>
   );
